@@ -1,3 +1,5 @@
 ---
 wifiap_interface: wlan0
 wifiap_bridge: br0
+wifiap_ssid: FreeWiFi  # AP name
+wifiap_password: 'jachcutoheslo'
