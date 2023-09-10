@@ -1,2 +1,3 @@
 ---
 wifiap_interface: wlan0
+wifiap_bridge: br0
