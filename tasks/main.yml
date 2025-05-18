@@ -1,0 +1,5 @@
+---
+- name: Create hostapd.conf
+    template: hostapd.conf.j2
+    dest: /etc/hostapd/hostapd.conf
+

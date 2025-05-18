@@ -1,0 +1,40 @@
+interface={{ wifiap_interface }}
+# Bridge name
+# vmbr0
+bridge={{ wifiap_bridge }}
+
+driver=nl80211
+
+country_code={{ wifiap_country_code }}
+
+ssid={{ wifiap_ssid }}
+
+# 'g' - 2.4 GHz, 'a' - 5GHz
+hw_mode=a
+
+# 0 means the AP will search for the channel with the least interferences
+channel=0
+
+ieee80211n=1
+ieee80211ac=1
+# QoS support
+wmm_enabled=1
+
+wpa=2
+
+wpa_passphrase={{ wifiap_password }}
+
+## Key management algorithms ##
+wpa_key_mgmt=WPA-PSK
+#
+# ## Set cipher suites (encryption algorithms) ##
+# ## TKIP = Temporal Key Integrity Protocol
+# ## CCMP = AES in Counter mode with CBC-MAC
+wpa_pairwise=TKIP
+rsn_pairwise=CCMP
+#
+#  ## Shared Key Authentication ##
+auth_algs=1
+#
+#   ## Accept all MAC address ###
+macaddr_acl=0
